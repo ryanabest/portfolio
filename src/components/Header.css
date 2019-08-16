@@ -1,0 +1,95 @@
+#menu {
+  width: 100%;
+	max-width: 1500px;
+	padding: 1em 2vw;
+  margin: 5vmin auto;
+}
+
+#menu h1, #menu a {
+  letter-spacing: 0.2em;
+}
+
+#menu img {
+  max-height: 50px;
+  vertical-align: top;
+  margin: 0 2em;
+}
+
+#menu-links a {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 700;
+  padding-left: 0.5em;
+}
+
+#top-menu {
+  /* height: 5vh; */
+  line-height: 50px;
+  top: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+#top-menu a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#menu-links a, #top-menu h1 {
+  font-size: 2.5rem;
+}
+
+#name h1 {
+  font-weight: 700;
+  display: inline;
+  line-height: 50px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Responsive Styles */
+@media screen and (max-width : 710px){
+
+  #top-menu, #name {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  #menu {
+    margin: 1rem auto 0px auto;
+  }
+
+  #menu-links {
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  #top-menu h1, #menu-links a {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  #name, #menu-links {
+    margin: .25em 0px;
+  }
+
+  #menu img {
+    max-height: 15vmin;
+  }
+
+  #name h1 {
+    line-height: 15vmin;
+  }
+
+  #menu-links a {
+    padding: 0 0.25em;
+    font-size: 7vw;
+  }
+
+  /* p {
+    font-size: 2vh;
+  } */
+
+}
